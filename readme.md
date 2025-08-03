@@ -30,29 +30,26 @@ Traditional infrastructure inspection is expensive, time-consuming, and prone to
 
 ## 🎯 The Solution
 
+### Training Phase
 ```mermaid
-graph TB
-   subgraph "Training Phase"
-       A[Healthy Concrete Images] --> B[Data Preprocessing]
-       B --> C[VAE Architecture]
-       C --> D[Encoder Network]
-       C --> E[Decoder Network]
-       D --> F[Latent Space]
-       F --> E
-       E --> G[Reconstructed Images]
-       G --> H[Calculate Loss]
-       H --> I[Backpropagation]
-       I --> J[Trained VAE Model]
-   end
-   
-   subgraph "Inference Phase"
-       K[New Infrastructure Image] --> L[Trained VAE Model]
-       L --> M[Reconstruction]
-       M --> N[Calculate Error]
-       N --> O{Error > Threshold?}
-       O -->|Yes| P[🚨 CRACK DETECTED]
-       O -->|No| Q[✅ HEALTHY SURFACE]
-   end
+graph LR
+    A[Healthy Concrete Images] --> B[Data Preprocessing]
+    B --> C[VAE Training]
+    C --> D[Encoder-Decoder Learning]
+    D --> E[Loss Calculation]
+    E --> F[Model Optimization]
+    F --> G[💾 Trained VAE Model]
+```
+
+### Inference Phase
+```mermaid
+graph LR
+    H[New Infrastructure Image] --> I[Trained VAE Model]
+    I --> J[Image Reconstruction]
+    J --> K[Calculate Error]
+    K --> L{Error > Threshold?}
+    L -->|Yes| M[🚨 CRACK DETECTED]
+    L -->|No| N[✅ HEALTHY SURFACE]
 ```
 
 ---
