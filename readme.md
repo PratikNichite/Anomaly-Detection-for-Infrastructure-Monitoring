@@ -17,7 +17,7 @@
 
 ## 🚀 Project Highlights
 
-🔥 **94.2% Accuracy** in detecting concrete cracks without labeled training data  
+🔥 **96.1% F1-score** in detecting concrete cracks without labeled training data  
 🧠 **Variational Autoencoder** learns healthy infrastructure patterns  
 ⚡ **Training Pipeline** - Complete notebook for model training  
 📊 **Complete Analysis** - From data preprocessing to deployment  
@@ -132,7 +132,7 @@ pip install torch torchvision opencv-python matplotlib seaborn jupyter
 ## 🎯 Key Achievements
 
 ✅ **Unsupervised Learning Success** - No manual crack labeling required  
-✅ **High Performance** - 94%+ accuracy on real infrastructure data  
+✅ **High Performance** - 96%+ F1-score on real infrastructure data  
 ✅ **Production Ready** - Optimized model with deployment pipeline  
 ✅ **Comprehensive Analysis** - End-to-end ML workflow demonstrated  
 ✅ **Scalable Solution** - Can process thousands of images efficiently  
