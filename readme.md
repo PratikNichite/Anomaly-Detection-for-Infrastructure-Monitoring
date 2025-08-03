@@ -52,10 +52,10 @@ graph LR
 
 | 📊 **Metric** | 🎯 **Score** | 📝 **Impact** |
 |---------------|--------------|---------------|
-| **Accuracy** | `94.2%` | Industry-grade performance |
-| **Precision** | `92.8%` | Minimal false alarms |
-| **Recall** | `96.1%` | Catches nearly all cracks |
-| **F1-Score** | `94.4%` | Balanced detection |
+| **AUC** | `99.3%` | Industry-grade performance |
+| **Precision** | `97.8%` | Minimal false alarms |
+| **Recall** | `94.5%` | Catches nearly all cracks |
+| **F1-Score** | `96.1%` | Balanced detection |
 
 </div>
 
