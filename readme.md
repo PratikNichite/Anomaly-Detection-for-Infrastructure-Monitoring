@@ -33,15 +33,15 @@ Traditional infrastructure inspection is expensive, time-consuming, and prone to
 ### Training Phase
 ```mermaid
 graph LR
-    A[Healthy Images] --> B[VAE Training] --> C[💾 Trained Model]
+    A[Healthy Images Only] --> B[VAE Learning] --> C[Normal Patterns] --> D[💾 Model]
 ```
 
 ### Inference Phase
 ```mermaid
 graph LR
-    D[New Image] --> E[Trained Model] --> F[Reconstruction Error] --> G{Crack?}
-    G -->|Yes| H[🚨 CRACK]
-    G -->|No| I[✅ HEALTHY]
+    E[Test Image] --> F[Reconstruct] --> G[Compare Error] --> H{High Error?}
+    H -->|Yes| I[🚨 ANOMALY]
+    H -->|No| J[✅ NORMAL]
 ```
 
 ---
