@@ -31,14 +31,28 @@ Traditional infrastructure inspection is expensive, time-consuming, and prone to
 ## 🎯 The Solution
 
 ```mermaid
-graph LR
-    A[Healthy Images] --> B[VAE Training]
-    B --> C[Learned Patterns]
-    C --> D[New Image]
-    D --> E[Reconstruction Error]
-    E --> F{Error > Threshold?}
-    F -->|Yes| G[🚨 CRACK DETECTED]
-    F -->|No| H[✅ HEALTHY]
+graph TB
+   subgraph "Training Phase"
+       A[Healthy Concrete Images] --> B[Data Preprocessing]
+       B --> C[VAE Architecture]
+       C --> D[Encoder Network]
+       C --> E[Decoder Network]
+       D --> F[Latent Space]
+       F --> E
+       E --> G[Reconstructed Images]
+       G --> H[Calculate Loss]
+       H --> I[Backpropagation]
+       I --> J[Trained VAE Model]
+   end
+   
+   subgraph "Inference Phase"
+       K[New Infrastructure Image] --> L[Trained VAE Model]
+       L --> M[Reconstruction]
+       M --> N[Calculate Error]
+       N --> O{Error > Threshold?}
+       O -->|Yes| P[🚨 CRACK DETECTED]
+       O -->|No| Q[✅ HEALTHY SURFACE]
+   end
 ```
 
 ---
@@ -117,9 +131,9 @@ pip install torch torchvision opencv-python matplotlib seaborn jupyter
 ```
 📦 Anomaly-Detection-for-Infrastructure-Monitoring
 ├── 📔 code.ipynb           # 🌟 MAIN NOTEBOOK - Complete analysis
-├── 🤖 best_vae.pth         # Model weights (generated after training)
+├── 🤖 best_vae.pth         # Model weights (Generated after training)
 ├── 📊 visualizations/      # Result plots and analysis
-├── 🗂️ data/               # Dataset directory
+├── 🗂️ data/               # Dataset directory (Should be added by users)
 ├── 📋 requirements.txt     # Python dependencies
 └── 📄 documentation.pdf   # Technical documentation
 ```
