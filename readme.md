@@ -1,4 +1,4 @@
-# 🔍 Probabilistic Latent Space Modeling for Infrastructure Anomaly Detection
+# 🔍 Anomaly Detection for Infrastructure Monitoring
 
 <div align="center">
 
