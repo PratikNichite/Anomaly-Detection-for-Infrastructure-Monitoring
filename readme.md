@@ -1,4 +1,4 @@
-# 🔍 AI-Powered Infrastructure Crack Detection
+# 🔍 Probabilistic Latent Space Modeling for Infrastructure Anomaly Detection
 
 <div align="center">
 
@@ -6,7 +6,6 @@
 ![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)
 ![OpenCV](https://img.shields.io/badge/OpenCV-27338e?style=for-the-badge&logo=OpenCV&logoColor=white)
 
-**🎯 Unsupervised anomaly detection for concrete infrastructure using Variational Autoencoders**
 
 [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/PratikNichite/Anomaly-Detection-for-Infrastructure-Monitoring/blob/main/code.ipynb)
 ![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)
